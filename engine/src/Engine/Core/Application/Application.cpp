@@ -1,3 +1,4 @@
+#include "PCH.h"
 #include "Application.h"
 
 namespace Engine
@@ -30,6 +31,13 @@ namespace Engine
 		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClosed));
 
 		CORE_TRACE("{}", event);
+
+		for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();)
+		{
+			(*--it)->OnEvent(event);
+			if (event.Handled)
+				break;
+		}
 	}
 
 	void Application::PushLayer(Layer* layer)

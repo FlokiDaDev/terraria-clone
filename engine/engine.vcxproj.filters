@@ -30,61 +30,63 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\engine\Core\Application\Application.h">
+    <ClInclude Include="src\Engine\Core\Application\Application.h">
       <Filter>Core\Application</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\Core\Core.h">
+    <ClInclude Include="src\Engine\Core\Core.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\Core\Entrypoint.h">
+    <ClInclude Include="src\Engine\Core\Entrypoint.h">
       <Filter>Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\Core\Events\ApplicationEvent.h">
+    <ClInclude Include="src\Engine\Core\Events\ApplicationEvent.h">
       <Filter>Core\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\Core\Events\Event.h">
+    <ClInclude Include="src\Engine\Core\Events\Event.h">
       <Filter>Core\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\Core\Events\KeyEvent.h">
+    <ClInclude Include="src\Engine\Core\Events\KeyEvent.h">
       <Filter>Core\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\Core\Events\MouseEvent.h">
+    <ClInclude Include="src\Engine\Core\Events\MouseEvent.h">
       <Filter>Core\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\Core\Input\Input.h">
+    <ClInclude Include="src\Engine\Core\Input\Input.h">
       <Filter>Core\Input</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\Core\Layers\Layer.h">
+    <ClInclude Include="src\Engine\Core\Layers\Layer.h">
       <Filter>Core\Layers</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\Core\Layers\LayerStack.h">
+    <ClInclude Include="src\Engine\Core\Layers\LayerStack.h">
       <Filter>Core\Layers</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\Core\Log\Log.h">
+    <ClInclude Include="src\Engine\Core\Log\Log.h">
       <Filter>Core\Log</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\Core\Window\Window.h">
+    <ClInclude Include="src\Engine\Core\Window\Window.h">
       <Filter>Core\Window</Filter>
     </ClInclude>
-    <ClInclude Include="src\engine\Engine.h" />
-    <ClInclude Include="src\engine\Platform\Windows\Window.h">
+    <ClInclude Include="src\Engine\Engine.h" />
+    <ClInclude Include="src\Engine\PCH.h" />
+    <ClInclude Include="src\Engine\Platform\Windows\Window.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\engine\Core\Application\Application.cpp">
+    <ClCompile Include="src\Engine\Core\Application\Application.cpp">
       <Filter>Core\Application</Filter>
     </ClCompile>
-    <ClCompile Include="src\engine\Core\Layers\Layer.cpp">
+    <ClCompile Include="src\Engine\Core\Layers\Layer.cpp">
       <Filter>Core\Layers</Filter>
     </ClCompile>
-    <ClCompile Include="src\engine\Core\Layers\LayerStack.cpp">
+    <ClCompile Include="src\Engine\Core\Layers\LayerStack.cpp">
       <Filter>Core\Layers</Filter>
     </ClCompile>
-    <ClCompile Include="src\engine\Core\Log\Log.cpp">
+    <ClCompile Include="src\Engine\Core\Log\Log.cpp">
       <Filter>Core\Log</Filter>
     </ClCompile>
-    <ClCompile Include="src\engine\Platform\Windows\Window.cpp">
+    <ClCompile Include="src\Engine\PCH.cpp" />
+    <ClCompile Include="src\Engine\Platform\Windows\Window.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
   </ItemGroup>

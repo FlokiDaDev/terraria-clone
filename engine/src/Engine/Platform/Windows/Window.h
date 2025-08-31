@@ -1,7 +1,6 @@
 #pragma once
 
-#include <GLFW/glfw3.h>
-
+#include "Core/Core.h"
 #include "Core/Window/Window.h"
 
 namespace Engine

@@ -8,9 +8,9 @@ project "engine"
     objdir("../bin-int/" .. outputdir .. "/%{prj.name}")
 
     files {
-        "src/engine/**.h",
-        "src/engine/**.hpp",
-        "src/engine/**.cpp"
+        "src/Engine/**.h",
+        "src/Engine/**.hpp",
+        "src/Engine/**.cpp"
     }
     excludes { "premake5.lua" }
 
@@ -24,6 +24,9 @@ project "engine"
         "src/Engine",
         vcpkg_inc
     }
+
+    pchheader "PCH.h"
+    pchsource "src/Engine/PCH.cpp"
 
     flags = { "MultiProcessorCompile" }
     buildoptions "/utf-8"

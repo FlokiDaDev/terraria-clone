@@ -2,6 +2,7 @@
 
 #include <string>
 
+#include "Core/Core.h"
 #include "Core/Events/Event.h"
 
 namespace Engine

@@ -53,7 +53,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='dbg|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PCH.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src\Engine;..\..\..\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -75,7 +76,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='rel|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>PCH.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src\Engine;..\..\..\vcpkg\installed\x64-windows-static\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -100,27 +102,31 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\engine\Core\Application\Application.h" />
-    <ClInclude Include="src\engine\Core\Core.h" />
-    <ClInclude Include="src\engine\Core\Entrypoint.h" />
-    <ClInclude Include="src\engine\Core\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\engine\Core\Events\Event.h" />
-    <ClInclude Include="src\engine\Core\Events\KeyEvent.h" />
-    <ClInclude Include="src\engine\Core\Events\MouseEvent.h" />
-    <ClInclude Include="src\engine\Core\Input\Input.h" />
-    <ClInclude Include="src\engine\Core\Layers\Layer.h" />
-    <ClInclude Include="src\engine\Core\Layers\LayerStack.h" />
-    <ClInclude Include="src\engine\Core\Log\Log.h" />
-    <ClInclude Include="src\engine\Core\Window\Window.h" />
-    <ClInclude Include="src\engine\Engine.h" />
-    <ClInclude Include="src\engine\Platform\Windows\Window.h" />
+    <ClInclude Include="src\Engine\Core\Application\Application.h" />
+    <ClInclude Include="src\Engine\Core\Core.h" />
+    <ClInclude Include="src\Engine\Core\Entrypoint.h" />
+    <ClInclude Include="src\Engine\Core\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Engine\Core\Events\Event.h" />
+    <ClInclude Include="src\Engine\Core\Events\KeyEvent.h" />
+    <ClInclude Include="src\Engine\Core\Events\MouseEvent.h" />
+    <ClInclude Include="src\Engine\Core\Input\Input.h" />
+    <ClInclude Include="src\Engine\Core\Layers\Layer.h" />
+    <ClInclude Include="src\Engine\Core\Layers\LayerStack.h" />
+    <ClInclude Include="src\Engine\Core\Log\Log.h" />
+    <ClInclude Include="src\Engine\Core\Window\Window.h" />
+    <ClInclude Include="src\Engine\Engine.h" />
+    <ClInclude Include="src\Engine\PCH.h" />
+    <ClInclude Include="src\Engine\Platform\Windows\Window.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\engine\Core\Application\Application.cpp" />
-    <ClCompile Include="src\engine\Core\Layers\Layer.cpp" />
-    <ClCompile Include="src\engine\Core\Layers\LayerStack.cpp" />
-    <ClCompile Include="src\engine\Core\Log\Log.cpp" />
-    <ClCompile Include="src\engine\Platform\Windows\Window.cpp" />
+    <ClCompile Include="src\Engine\Core\Application\Application.cpp" />
+    <ClCompile Include="src\Engine\Core\Layers\Layer.cpp" />
+    <ClCompile Include="src\Engine\Core\Layers\LayerStack.cpp" />
+    <ClCompile Include="src\Engine\Core\Log\Log.cpp" />
+    <ClCompile Include="src\Engine\PCH.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Engine\Platform\Windows\Window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

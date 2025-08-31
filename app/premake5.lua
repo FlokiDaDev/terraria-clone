@@ -26,9 +26,12 @@ project "app"
 
     includedirs {
         "src",
-        "../engine/src",
+        "../Engine/src",
         vcpkg_inc
     }
+
+    pchheader "PCH.h"
+    pchsource "src/PCH.cpp"
 
     defines {
         "APPLICATION"

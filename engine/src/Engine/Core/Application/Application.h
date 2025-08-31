@@ -1,13 +1,10 @@
 #pragma once
 
-#include <memory>
-
+#include "Core/Core.h"
 #include "Core/Window/Window.h"
-
 #include "Core/Events/ApplicationEvent.h"
 #include "Core/Events/KeyEvent.h"
 #include "Core/Events/MouseEvent.h"
-
 #include "Core/Layers/LayerStack.h"
 
 

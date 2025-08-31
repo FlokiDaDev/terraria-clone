@@ -2,8 +2,6 @@
 
 #include "Layer.h"
 
-#include <vector>
-
 namespace Engine
 {
 	class LayerStack

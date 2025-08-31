@@ -55,7 +55,8 @@ project "app"
             "glad",
             "glfw3",
             "fmtd",
-            "spdlogd"
+            "spdlogd",
+            "glm"
         }
 
         filter { "configurations:rel" }
@@ -76,5 +77,6 @@ project "app"
             "glad",
             "glfw3",
             "fmt",
-            "spdlog"
+            "spdlog",
+            "glm"
         }

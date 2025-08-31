@@ -2,7 +2,7 @@
 
 ![C++23](https://img.shields.io/badge/C%2B%2B-23-blue.svg?style=flat&logo=c%2B%2B) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![Build System](https://img.shields.io/badge/build-Premake5%20%7C%20VS2022-brightgreen.svg)
 
-A lightweight **Terraria-inspired clone** built in **C++23** using **OpenGL** and **GLFW**.
+A lightweight **Terraria-inspired clone** built in **C++23** using **OpenGL**, **GLFW** and **GLM**.
 This project serves as a hands-on way to explore **graphics programming** and **game engine architecture**.
 
 Inspired by [TheCherno’s Game Engine series](https://youtube.com/playlist?list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT&si=ZCR5-iKJd1afBkNo)
@@ -26,6 +26,7 @@ Inspired by [TheCherno’s Game Engine series](https://youtube.com/playlist?list
 Installed via [vcpkg](https://github.com/microsoft/vcpkg) (`x64-windows-static` triplet recommended, modifications needed otherwise):
 -  `glad[gl-api-46,gl-core]`
 -  `glfw3`
+-  `glm`
 -  `fmt`
 -  `spdlog`
 ---
@@ -44,6 +45,7 @@ cd vcpkg && bootstrap-vcpkg.bat
 ```bat
 vcpkg install glad[gl-api-46,gl-core]:x64-windows-static
 vcpkg install glfw3:x64-windows-static
+vcpkg install glm:x64-windows-static
 vcpkg install spdlog:x64-windows-static
 ```
 *Installing spdlog will automatically install fmt

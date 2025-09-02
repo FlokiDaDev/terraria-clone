@@ -45,7 +45,8 @@ project "app"
         runtime "Debug"
         symbols "on"
         defines {
-            "DEBUG"
+            "DEBUG",
+            "GLFW_INCLUDE_NONE"
         }
         libdirs {
             vcpkg_dbg_lib
@@ -67,7 +68,8 @@ project "app"
         runtime "Release"
         optimize "on"
         defines {
-            "NDEBUG"
+            "NDEBUG",
+            "GLFW_INCLUDE_NONE"
         }
         libdirs {
             vcpkg_lib

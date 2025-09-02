@@ -12,6 +12,11 @@ public:
 	{
 		GAME_DEBUG("TestLayer::OnUpdate()");
 	}
+
+	virtual void OnEvent(Engine::Event& event) override
+	{
+		GAME_DEBUG("{}", event);
+	}
 };
 
 class Terraria : public Engine::Application
